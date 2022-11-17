@@ -3,7 +3,7 @@ function addHeader(ele) {
     headerEl.innerHTML = `
     <div class="contenedor">
     <div class="contenedor__img">
-    <img class="contenedor__img-logo" src="../assets/CATMETAL-1.png">
+    <img class="contenedor__img-logo" src="./assets/logo_catm.png">
     </div>
     <div></div>
     </div>

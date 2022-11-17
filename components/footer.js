@@ -3,7 +3,7 @@ function addFooter(ele) {
   footerEl.innerHTML = `
     <div class="footer">
             
-    <img class="img__footer" src="../assets/Catmetal.jfif" alt="" />
+    <img class="img__footer" src="./assets/Catmetal.jfif" alt="" />
      <div class="texto">
         <p class="title">CATMETAL</p>
         <p class="title">Copyright 2022</p>
