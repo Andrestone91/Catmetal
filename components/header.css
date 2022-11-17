@@ -1,0 +1,11 @@
+.contenedor {
+  height: 75px;
+  width: auto;
+  background: linear-gradient(10.17deg, green -65.65%, grey 93.73%);
+  display: flex;
+  align-items: center;
+}
+.contenedor__img-logo {
+  height: 40px;
+  margin: 0 0 0 10px;
+}
