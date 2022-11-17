@@ -23,8 +23,8 @@
     <script defer src="./pages/index.js"></script>
   </head>
   <body>
-    <header class="contenedor-Header"></header>
     <section class="bienvenida">
+      <header class="contenedor-Header"></header>
       <div class="bienvenida__contenedor">
         <div class="bienvenida__contenedor-text">
           <video
@@ -45,7 +45,7 @@
         </div>
       </div>
     </section>
-    <section class="descripcion">
+    <section id="nosotros" class="descripcion">
       <div class="descipcion__contenedor">
         <h1 class="title_text">Sobre nosotros</h1>
         <video
@@ -103,7 +103,8 @@
           <label class="servicios__text info" for=""
             >UBICACION <br />
             <p class="text__ubi">
-              Calle 142 Nro. 3026 E/ 30 y 31 (Berazategui)
+              Nos encontramos en Berazategui <br />
+              Calle 142 A nro. 3026 e/ Calle 30 y Calle 31
             </p>
           </label>
         </div>
@@ -114,11 +115,39 @@
             <p class="text__ubi">catmetal.arg@gmail.com</p>
           </label>
         </div>
+
+        <div class="contacto__info">
+          <img
+            class="contacto__ico"
+            src="./assets/social_facebook_fb_35.png"
+            alt=""
+          />
+          <label class="servicios__text info label" for="">
+            <a
+              class="links"
+              href="https://www.facebook.com/profile.php?id=100046977355703"
+              >FACEBOOK
+            </a>
+          </label>
+        </div>
+
+        <div class="contacto__info">
+          <img class="contacto__ico" src="./assets/whatsapp-2.png" alt="" />
+          <label class="servicios__text info label" for=""
+            >TELEFONOS <br />
+            <p class="text__ubi">
+              +54 9 112257-2844 <br />
+              +54 9 115820-8081 <br />
+              <a href="/#nosotros">nosotros</a>
+            </p>
+          </label>
+        </div>
+
         <div class="maps__contenedor">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9268.98568696945!2d-58.20837673342261!3d-34.778728134539115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a328bc7dd38f5f%3A0x5d34d63d8800baf4!2sC.%20142%203026%2C%20B1860BFN%20Villa%20Espa%C3%B1a%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1668715684426!5m2!1ses!2sar"
-            width="280"
-            height="320"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d819.2628809279151!2d-58.203388370800674!3d-34.779478197254576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a328bc9d3decf5%3A0xe8831b70cc191bbe!2sC.%20142%20A%203026%2C%20B1860BGN%20Villa%20Espa%C3%B1a%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1668720656538!5m2!1ses!2sar"
+            width="360"
+            height="450"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
