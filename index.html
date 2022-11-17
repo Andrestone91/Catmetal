@@ -26,9 +26,19 @@
     <header class="contenedor-Header"></header>
     <section class="bienvenida">
       <div class="bienvenida__contenedor">
-        <div class="binvenida__contenedor-text">
+        <div class="bienvenida__contenedor-text">
+          <video
+            class="video-el"
+            height="320"
+            width="240"
+            controls
+            autoplay
+            muted
+          >
+            <source src="./assets/video-intro.mp4" type="video/mp4" />
+            tu navegador no es compatible con videos HTML5
+          </video>
           <h1 class="text">
-            Tu <br />
             Centro de reciclaje de Catalizadores en desuso y placas
             electrónicas/RaEE
           </h1>
@@ -68,6 +78,28 @@
             equipo directamente en su sitio)
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="contacto">
+      <div class="contenedor-contacto">
+        <h1 class="title_text">Contacto</h1>
+        <div class="contacto__info">
+          <img class="contacto__ico" src="./assets/maps.png" alt="" />
+
+          <label class="servicios__text info" for=""
+            >UBICACION <br />
+            <p class="text__ubi">
+              Calle 142 A nro. 3026 E/ 30 y 31 (Berazategui)
+            </p>
+          </label>
+        </div>
+        <div class="contacto__info">
+          <img class="contacto__ico" src="./assets/correo.png" alt="" />
+          <label class="servicios__text info label" for=""
+            >EMAIL <br />
+            <p class="text__ubi">catmetal.arg@gmail.com</p>
+          </label>
+        </div>
       </div>
     </section>
     <div class="btn-wsp">

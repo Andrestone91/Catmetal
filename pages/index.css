@@ -5,12 +5,15 @@ body {
   margin: 0;
 }
 .bienvenida {
-  height: 700px;
-  background: url(../assets/portada-movil-1-prueba-2.jpg);
+  height: 616px;
+  background: linear-gradient(rgba(12, 74, 58, 0.75), rgba(5, 7, 12, 1)),
+    url(../assets/portada-movil-1-prueba.jpg);
+  background-size: cover;
 }
 @media (min-width: 675px) {
   .bienvenida {
-    background: url(../assets/portada-desktop-3.jpg);
+    background: linear-gradient(rgba(12, 74, 58, 0.75), rgba(5, 7, 12, 1)),
+      url(../assets/portada-desktop-3.jpg);
   }
 }
 .bienvenida__contenedor {
@@ -21,12 +24,18 @@ body {
   justify-content: center;
   align-items: center;
 }
+.bienvenida__contenedor-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .text {
   color: white;
   font-size: 1.8rem;
   line-height: 1.1em;
   font-weight: 400;
-  padding: 20px 30px 110px 30px;
+  padding: 20px 30px 50px 30px;
   margin: 0;
   font-family: "Rubik", sans-serif;
   text-shadow: 46px 28px 14px green;
@@ -53,7 +62,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #9eb7e52b;
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 .servicios__text {
   font-family: "Rubik", sans-serif;
@@ -112,4 +121,34 @@ body {
 }
 .btn-wsp:hover {
   background: #20ba5a;
+}
+.contenedor-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacto__ico {
+  width: 32px;
+  height: 32px;
+  margin-left: 20px;
+}
+.contacto__info {
+  margin-right: auto;
+  margin-top: 30px;
+  display: flex;
+}
+.info {
+  padding: 0;
+  margin-left: 15px;
+}
+.text__ubi {
+  margin: 0;
+  padding-top: 5px;
+}
+.texto-info {
+  margin: 0;
+  padding-bottom: 5px;
+}
+.video-el {
 }
