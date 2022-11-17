@@ -6,7 +6,7 @@ function addFooter(ele) {
     <img class="img__footer" src="./assets/Catmetal.jfif" alt="" />
      <div class="texto">
         <p class="title">CATMETAL</p>
-        <p class="title">Copyright 2022</p>
+        <p class="title mod">2022</p>
         </div>
   </div>
     `
