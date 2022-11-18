@@ -23,31 +23,55 @@
     <script defer src="./pages/index.js"></script>
   </head>
   <body>
-    <section class="bienvenida">
+    <section id="bienvenida" class="bienvenida">
       <header class="contenedor-Header"></header>
       <div class="bienvenida__contenedor">
         <div class="bienvenida__contenedor-text">
-          <video
-            class="video-el"
-            height="320"
-            width="240"
-            controls
-            autoplay
-            muted
-          >
-            <source src="./assets/video-intro.mp4" type="video/mp4" />
-            tu navegador no es compatible con videos HTML5
-          </video>
+          <img
+            class="logo-catmetal"
+            src="./assets/Catmetal-logo-3.jpg"
+            alt=""
+          />
+        </div>
+        <div class="presentacion">
           <h1 class="text">
             Centro de reciclaje de Catalizadores en desuso y placas
-            electrónicas/RAEEs
+            electrónicas/raEES
           </h1>
+          <a href="#aprender">
+            <button class="btn">APRENDE MÁS</button>
+          </a>
         </div>
       </div>
     </section>
     <section id="nosotros" class="descripcion">
       <div class="descipcion__contenedor">
         <h1 class="title_text">Sobre nosotros</h1>
+        <video
+          class="video-el"
+          height="320"
+          width="240"
+          controls
+          autoplay
+          muted
+        >
+          <source src="./assets/video-intro.mp4" type="video/mp4" />
+          tu navegador no es compatible con videos HTML5
+        </video>
+        <h2 class="servicios__text">
+          Catmetal es un comprador líder de convertidores catalíticos usados y
+          raEES. <br />
+          <br />
+          La empresa fue fundada con el fin de mantener nuestro medio ambiente
+          verde, a través de la recuperación de residuos que tienen un impacto
+          negativo siendo revaluados en nuevos productos para la economía
+          global.
+        </h2>
+      </div>
+    </section>
+    <section id="servicios" class="servicios">
+      <div class="servicios__contenedor">
+        <h1 class="title_text">Servicios</h1>
         <video
           class="video-el"
           style="margin-top: 20px"
@@ -61,21 +85,7 @@
           tu navegador no es compatible con videos HTML5
         </video>
         <h2 class="servicios__text">
-          Catmetal es un comprador líder de convertidores catalíticos usados y
-          RaEES. <br />
-          <br />
-          La empresa fue fundada con el fin de mantener nuestro medio ambiente
-          verde, a través de la recuperación de residuos que tienen un impacto
-          negativo siendo revaluados en nuevos productos para la economía
-          global.
-        </h2>
-      </div>
-    </section>
-    <section id="servicios" class="servicios">
-      <div class="servicios__contenedor">
-        <h1 class="title_text">Servicios</h1>
-        <h2 class="servicios__text">
-          Desea vender sus catalizadores y/o RaEES rápida y fácilmente?
+          Desea vender sus catalizadores y/o raEES rápida y fácilmente?
           Entonces, lo que usted necesita es exactamente nuestro servicio de
           compra. Nuestro equipo de expertos clasificará el valor de su material
           con atención personalizada:
@@ -92,15 +102,38 @@
             equipo directamente en su sitio)
           </li>
         </ul>
+        <div class="slider">
+          <ul>
+            <il><img src="./assets/foto-1.jpeg" alt="" /></il>
+            <il><img src="./assets/foto-2.jpeg" alt="" /></il>
+            <il><img src="./assets/foto-4.jpeg" alt="" /></il>
+            <il><img src="./assets/foto-6.jpeg" alt="" /></il>
+          </ul>
+        </div>
       </div>
-
-      <div class="slider">
-        <ul>
-          <il><img src="./assets/foto-1.jpeg" alt="" /></il>
-          <il><img src="./assets/foto-2.jpeg" alt="" /></il>
-          <il><img src="./assets/foto-4.jpeg" alt="" /></il>
-          <il><img src="./assets/foto-6.jpeg" alt="" /></il>
-        </ul>
+    </section>
+    <section id="aprender" class="rubro">
+      <div class="contenedor-rubro">
+        <h1 class="title_text RAEEs">¿Que es raEES?</h1>
+        <h2 class="servicios__text">
+          Residuos de Aparatos Eléctricos y Electrónicos
+        </h2>
+        <h2 class="servicios__text">
+          Reciclamos una amplia gama de desechos electrónicos, incluidos
+          procesadores, RAM, placas de circuito y otros componentes
+          electrónicos. Nos aseguramos de que todas las prácticas se realicen
+          con el máximo cuidado y atención. El reciclaje de chatarra electrónica
+          sigue siendo una industria en evolución que ahora se encuentra en un
+          punto crítico de su desarrollo en términos de desafíos y crecimiento.
+          Debido al continuo aumento de la producción y el uso de productos
+          electrónicos, la eliminación y el reciclaje de estos productos se han
+          vuelto de gran importancia. En Buenos Metales S.A. contamos con la
+          tecnología y gestión necesarios para el correcto tratamiento de dichos
+          componentes.
+        </h2>
+        <a href="#bienvenida">
+          <button class="btn volver">VOLVER</button>
+        </a>
       </div>
     </section>
     <section id="contacto" class="contacto">
@@ -132,7 +165,6 @@
             <p class="text__ubi">
               +54 9 112257-2844 <br />
               +54 9 115820-8081 <br />
-              <a href="#nosotros">nosotros</a>
             </p>
           </label>
         </div>

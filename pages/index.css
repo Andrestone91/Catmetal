@@ -20,8 +20,6 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .bienvenida__contenedor-text {
   display: flex;
@@ -29,15 +27,19 @@ body {
   align-items: center;
   justify-content: center;
 }
+.logo-catmetal {
+  width: 315px;
+  margin-top: 30px;
+}
 .text {
   color: white;
   font-size: 1.8rem;
   line-height: 1.1em;
   font-weight: 400;
-  padding: 20px 30px 110px 30px;
-  margin: 0;
+
+  margin: 0 0 30px;
   font-family: "Rubik", sans-serif;
-  text-shadow: 46px 28px 14px green;
+  text-shadow: 30px 10px 10px green;
   -webkit-text-fill-color: lavender;
   -webkit-text-stroke: white 0.1px;
 }
@@ -46,7 +48,9 @@ body {
   height: 200px;
   object-fit: cover;
 }
-
+.presentacion {
+  padding: 70px 30px;
+}
 .title_text {
   font-size: 40px;
   font-family: "Roboto", sans-serif;
@@ -61,7 +65,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #9eb7e52b;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
 }
 .servicios__text {
   font-family: "Rubik", sans-serif;
@@ -126,6 +130,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #9eb7e52b;
 }
 .contacto__ico {
   width: 32px;
@@ -150,6 +155,7 @@ body {
   padding-bottom: 5px;
 }
 .video-el {
+  margin-top: 20px;
 }
 .maps__contenedor {
   margin: 50px 0 0 0;
@@ -204,4 +210,22 @@ body {
   100% {
     margin-left: -300%;
   }
+}
+.RAEEs {
+  color: black;
+  border: none;
+  font-size: 30px;
+}
+.contenedor-rubro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn {
+  width: 200px;
+  height: 55px;
+  padding: 0;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: mediumseagreen;
 }
