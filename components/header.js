@@ -7,8 +7,8 @@ function addHeader(ele) {
     <div></div>
     <div></div>
     <a href="#nosotros" class="text-nav">Nosotros</a>
-    <a href="./servicios.html" class="text-nav">Servicios</a>
-    <a href="./contacto.html" class="text-nav">Contacto</a>
+    <a href="#servicios" class="text-nav">Servicios</a>
+    <a href="#contacto" class="text-nav">Contacto</a>
     <button class="abre-ventana"></button>
     <div class="ventana">
       <div class="ventana__contenedor-boton">

@@ -9,10 +9,10 @@ body {
   background: linear-gradient(rgba(5, 7, 13, 0.75), rgba(5, 7, 12, 1)),
     url(../assets/portada-movil-1-prueba.jpg);
 }
-@media (min-width: 675px) {
+@media (min-width: 650px) {
   .bienvenida {
     background: linear-gradient(rgba(5, 7, 13, 0.75), rgba(5, 7, 12, 1)),
-      url(../assets/portada-desktop-3.jpg);
+      url(../assets/portada-desktop-prueba-4.jpg);
   }
 }
 .bienvenida__contenedor {
@@ -20,6 +20,13 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 960px) {
+  .bienvenida__contenedor {
+    flex-direction: initial;
+    justify-content: space-evenly;
+  }
 }
 .bienvenida__contenedor-text {
   display: flex;
@@ -27,9 +34,20 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 960px) {
+  .bienvenida__contenedor-text {
+    justify-content: initial;
+  }
+}
 .logo-catmetal {
   width: 250px;
   margin-top: 30px;
+}
+@media (min-width: 960px) {
+  .logo-catmetal {
+    width: 251px;
+    margin: 0;
+  }
 }
 .text {
   color: white;
@@ -43,6 +61,13 @@ body {
   -webkit-text-fill-color: lavender;
   -webkit-text-stroke: white 0.1px;
 }
+@media (min-width: 960px) {
+  .text {
+    margin: 144px 90x 87px 0px;
+    width: 450px;
+    font-size: 54px;
+  }
+}
 .img__logo {
   width: 200px;
   height: 200px;
@@ -50,6 +75,11 @@ body {
 }
 .presentacion {
   padding: 70px 30px;
+}
+@media (min-width: 960px) {
+  .presentacion {
+    padding: 0 0 0 0;
+  }
 }
 .title_text {
   font-size: 40px;
@@ -73,6 +103,11 @@ body {
   padding: 25px 35px 20px;
   margin: 0;
 }
+@media (min-width: 960px) {
+  .servicios__text {
+    padding: 35px 131px 0 0;
+  }
+}
 .ul-custom {
   text-align: left;
   font-family: "Rubik", sans-serif;
@@ -90,6 +125,24 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 70px;
+}
+@media (min-width: 960px) {
+  .descipcion__contenedor {
+    flex-direction: inherit;
+    justify-content: space-between;
+    flex-grow: 10px;
+  }
+}
+.descripcion__contenedor_info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 960px) {
+  .descripcion__contenedor_info {
+    align-items: flex-start;
+    padding: 0 0 0 50px;
+  }
 }
 .btn-wsp {
   position: fixed;
@@ -156,6 +209,13 @@ body {
 }
 .video-el {
   margin-top: 20px;
+}
+@media (min-width: 960px) {
+  .video-el {
+    width: 300px;
+    height: 500px;
+    margin-right: 20px;
+  }
 }
 .maps__contenedor {
   margin: 50px 0 0 0;
