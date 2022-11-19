@@ -215,17 +215,47 @@ body {
   color: black;
   border: none;
   font-size: 30px;
+  margin-right: auto;
+  margin-left: 35px;
 }
 .contenedor-rubro {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.btn {
+.btn,
+.btn__volver,
+.btn__inicio {
   width: 200px;
   height: 55px;
   padding: 0;
   border-radius: 5px;
   font-size: 15px;
   background-color: mediumseagreen;
+  border: none;
+}
+.btn_2 {
+  margin-right: auto;
+  margin-left: 35px;
+}
+.btn__volver {
+  width: 100px;
+  display: none;
+}
+.contenedor__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+ul {
+  list-style: none;
+}
+.img__services {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+.cont__serv {
+  display: flex;
 }

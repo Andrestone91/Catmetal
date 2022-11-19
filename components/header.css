@@ -7,7 +7,7 @@
 }
 .contenedor__img-logo {
   height: 12px;
-  margin: 5px 0 0 25px;
+  margin-top: 25px;
   border-radius: 10px;
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap");
