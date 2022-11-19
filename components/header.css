@@ -1,7 +1,6 @@
 .contenedor {
   height: 75px;
   width: auto;
-
   display: flex;
   align-items: center;
 }
@@ -12,6 +11,7 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap");
 .header-contenedor {
+  background: url(../assets/banner-movil-1.jpg);
   display: flex;
   justify-content: space-between;
   padding: 24px 15px;

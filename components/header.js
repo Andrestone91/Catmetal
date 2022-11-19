@@ -1,6 +1,6 @@
 function addHeader(ele) {
-    const headerEl = document.createElement("div");
-    headerEl.innerHTML = `<div class="header-contenedor">
+  const headerEl = document.createElement("div");
+  headerEl.innerHTML = `<div class="header-contenedor">
     <a href="./index.html">
       <img src="./assets/Catmetal-logo-2.jpg" alt="" class="contenedor__img-logo " />
     </a>
@@ -24,24 +24,24 @@ function addHeader(ele) {
     <img class="burger" src="./assets/burger.png" alt="" />
   </div>`;
 
-    ele.appendChild(headerEl);
+  ele.appendChild(headerEl);
 
-    const ventanaEl = document.querySelector(".ventana");
-    const cerrar = document.querySelector(".ventana__contenido").children
+  const ventanaEl = document.querySelector(".ventana");
+  const cerrar = document.querySelector(".ventana__contenido").children
 
-    const botonAbreVentana = document.querySelector(".abre-ventana");
+  const botonAbreVentana = document.querySelector(".abre-ventana");
 
-    const botonCierraVentana = document.querySelector(".ventana__cierra-ventana");
+  const botonCierraVentana = document.querySelector(".ventana__cierra-ventana");
 
-    botonAbreVentana.addEventListener("click", () => {
-        ventanaEl.style.display = "block";
-    });
-    botonCierraVentana.addEventListener("click", () => {
-        ventanaEl.style.display = "none";
-    });
-    for (const c of cerrar) {
-        c.addEventListener("click", () => {
-            ventanaEl.style.display = "none";
-        })
-    }
+  botonAbreVentana.addEventListener("click", () => {
+    ventanaEl.style.display = "block";
+  });
+  botonCierraVentana.addEventListener("click", () => {
+    ventanaEl.style.display = "none";
+  });
+  for (const c of cerrar) {
+    c.addEventListener("click", () => {
+      ventanaEl.style.display = "none";
+    })
+  }
 }
