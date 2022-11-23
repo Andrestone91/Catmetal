@@ -4,11 +4,11 @@ function addHeader(ele) {
     <a href="./index.html">
       <img src="./assets/Catmetal-logo-2.jpg" alt="" class="contenedor__img-logo " />
     </a>
-    <div></div>
-    <div></div>
+   <div class="nav-custom">
     <a href="#nosotros" class="text-nav">Nosotros</a>
     <a href="#servicios" class="text-nav">Servicios</a>
     <a href="#contacto" class="text-nav">Contacto</a>
+    </div>
     <button class="abre-ventana"></button>
     <div class="ventana">
       <div class="ventana__contenedor-boton">

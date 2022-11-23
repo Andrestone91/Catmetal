@@ -7,17 +7,37 @@
   align-items: center;
   padding-top: 38px;
 }
+@media (min-width: 960px) {
+  .footer {
+    height: 350px;
+    flex-direction: initial;
+    justify-content: space-between;
+  }
+}
 .texto {
   font-family: "Montserrat", sans-serif;
   margin-right: auto;
   justify-content: left;
 }
-
+@media (min-width: 960px) {
+  .texto {
+    margin-right: 100px;
+    align-self: self-end;
+  }
+}
 .img__footer {
   width: 300px;
   padding: 35px;
   object-fit: cover;
   margin: 0 0 0 0;
+}
+@media (min-width: 960px) {
+  .img__footer {
+    width: 238px;
+    padding: 36px 0 0 0px;
+    object-fit: cover;
+    margin: 0 0 0 45px;
+  }
 }
 .contenedor {
   text-align: left;

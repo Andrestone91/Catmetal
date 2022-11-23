@@ -23,8 +23,8 @@
     <script defer src="./pages/index.js"></script>
   </head>
   <body>
-    <header id="header" class="contenedor-Header"></header>
     <section id="bienvenida" class="bienvenida">
+      <header id="header" class="contenedor-Header"></header>
       <div class="bienvenida__contenedor">
         <div class="bienvenida__contenedor-text">
           <img class="logo-catmetal" src="./assets/Catmetal.jfif" alt="" />
@@ -69,27 +69,41 @@
         </div>
       </div>
     </section>
+
     <section id="servicios" class="servicios">
-      <div class="servicios__contenedor">
-        <h1 class="title_text">Servicios</h1>
-        <video
-          class="video-el"
-          style="margin-top: 20px"
-          height="320"
-          width="240"
-          controls
-          autoplay
-          muted
-        >
-          <source src="./assets/video.mp4" type="video/mp4" />
-          tu navegador no es compatible con videos HTML5
-        </video>
-        <h2 class="servicios__text">
-          Desea vender sus catalizadores y/o raEES rápida y fácilmente?
-          Entonces, lo que usted necesita es exactamente nuestro servicio de
-          compra. Nuestro equipo de expertos clasificará el valor de su material
-          con atención personalizada:
-        </h2>
+      <div class="servicios__contenedor-info-y-video">
+        <div>
+          <video
+            class="video-el"
+            style="margin-top: 20px"
+            height="320"
+            width="240"
+            controls
+            autoplay
+            muted
+          >
+            <source src="./assets/video.mp4" type="video/mp4" />
+            tu navegador no es compatible con videos HTML5
+          </video>
+        </div>
+        <div class="descripcion__contenedor_info">
+          <h1 class="title_text">Servicios</h1>
+          <h2 class="servicios__text">
+            Desea vender sus catalizadores y/o raEES rápida y fácilmente?
+            Entonces, lo que usted necesita es exactamente nuestro servicio de
+            compra. Nuestro equipo de expertos clasificará el valor de su
+            material con atención personalizada.
+            <br />
+            <br />
+            El metal es un material ampliamente reciclable, y muchos tipos se
+            reutilizan para su posterior uso. La preocupación mundial por el
+            medio ambiente es cada vez mayor, al igual que la necesidad de
+            reciclar la mayor cantidad posible de desechos, especialmente
+            aquellos materiales que terminarían en vertederos.
+          </h2>
+        </div>
+      </div>
+      <div class="servicios__contenedor-info-y-video" style="padding-top: 20px">
         <ul class="ul-custom">
           <li>
             <div class="cont__serv">
@@ -143,11 +157,17 @@
           </li>
         </ul>
         <div class="slider">
-          <ul>
+          <ul class="services__img-movil">
             <il><img src="./assets/foto-1-servicios.jpeg" alt="" /></il>
             <il><img src="./assets/foto-2.jpeg" alt="" /></il>
             <il><img src="./assets/foto-4.jpeg" alt="" /></il>
             <il><img src="./assets/foto-6.jpeg" alt="" /></il>
+          </ul>
+          <ul class="services__img-desktop">
+            <il><img src="./assets/foto-1-servicios-desktop.jpeg" alt="" /></il>
+            <il><img src="./assets/foto-2-desktop.jpeg" alt="" /></il>
+            <il><img src="./assets/foto-4.jpeg" alt="" /></il>
+            <il><img src="./assets/foto-6-desktop.jpeg" alt="" /></il>
           </ul>
         </div>
       </div>
@@ -179,51 +199,54 @@
     </section>
     <section id="contacto" class="contacto">
       <div class="contenedor-contacto">
-        <h1 class="title_text">Contacto</h1>
-        <div class="contacto__info">
-          <img class="contacto__ico" src="./assets/maps.png" alt="" />
+        <div class="contenedor-contacto-text-y-ubi">
+          <h1 class="title_text">Contacto</h1>
+          <div class="contacto__info">
+            <img class="contacto__ico" src="./assets/maps.png" alt="" />
 
-          <label class="servicios__text info" for=""
-            >UBICACION <br />
-            <p class="text__ubi">
-              Nos encontramos en Berazategui <br />
-              Calle 142 A nro. 3026 e/ Calle 30 y Calle 31
-            </p>
-          </label>
-        </div>
-        <div class="contacto__info">
-          <img class="contacto__ico" src="./assets/correo.png" alt="" />
-          <label class="servicios__text info label" for=""
-            >EMAIL <br />
-            <p class="text__ubi">catmetal.arg@gmail.com</p>
-          </label>
-        </div>
+            <label class="servicios__text info" for=""
+              >UBICACION <br />
+              <p class="text__ubi">
+                Nos encontramos en Berazategui <br />
+                Calle 142 A. nro 3026 e/ Calle 30 y Calle 31
+              </p>
+            </label>
+          </div>
+          <div class="contacto__info">
+            <img class="contacto__ico" src="./assets/correo.png" alt="" />
+            <label class="servicios__text info label" for=""
+              >EMAIL <br />
+              <p class="text__ubi">catmetal.arg@gmail.com</p>
+            </label>
+          </div>
 
-        <div class="contacto__info">
-          <img class="contacto__ico" src="./assets/whatsapp-2.png" alt="" />
-          <label class="servicios__text info label" for=""
-            >TELEFONOS <br />
-            <p class="text__ubi">
-              +54 9 112257-2844 <br />
-              +54 9 115820-8081 <br />
-            </p>
-          </label>
-        </div>
+          <div class="contacto__info">
+            <img class="contacto__ico" src="./assets/whatsapp-2.png" alt="" />
+            <label class="servicios__text info label" for=""
+              >TELEFONOS <br />
+              <p class="text__ubi">
+                +54 9 112257-2844 <br />
+                +54 9 115820-8081 <br />
+              </p>
+            </label>
+          </div>
 
-        <div class="contacto__info">
-          <img
-            class="contacto__ico"
-            src="./assets/social_facebook_fb_35.png"
-            alt=""
-          />
-          <label class="servicios__text info label" for="">
-            <a
-              class="links"
-              href="https://www.facebook.com/profile.php?id=100046977355703"
-              >FACEBOOK
-            </a>
-          </label>
+          <div class="contacto__info">
+            <img
+              class="contacto__ico"
+              src="./assets/social_facebook_fb_35.png"
+              alt=""
+            />
+            <label class="servicios__text info label" for="">
+              <a
+                class="links"
+                href="https://www.facebook.com/profile.php?id=100046977355703"
+                >FACEBOOK
+              </a>
+            </label>
+          </div>
         </div>
+        <div></div>
 
         <div class="maps__contenedor">
           <iframe

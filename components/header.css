@@ -6,19 +6,24 @@
 }
 .contenedor__img-logo {
   height: 12px;
-  margin-top: 25px;
+
   border-radius: 10px;
+}
+@media (min-width: 960px) {
+  .contenedor__img-logo {
+    height: 14px;
+  }
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap");
 .header-contenedor {
-  background: url(../assets/banner-movil-1.jpg);
   display: flex;
   justify-content: space-between;
   padding: 24px 15px;
+  align-items: center;
 }
 @media (min-width: 960px) {
   .header-contenedor {
-    padding: 35px 50px 30px 50px;
+    padding: 35px 65px 30px;
   }
 }
 .abre-ventana {
@@ -91,7 +96,8 @@
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   display: none;
-  padding-top: 10px;
+
+  padding-right: 50px;
   text-decoration: none;
   text-shadow: 0 0 8px black;
   color: mediumspringgreen;
@@ -120,4 +126,7 @@
     height: 48px;
     margin-right: 300px;
   }
+}
+.nav-custom {
+  display: flex;
 }

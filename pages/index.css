@@ -5,7 +5,7 @@ body {
   margin: 0;
 }
 .bienvenida {
-  height: 100vh;
+  height: 667px;
   background: linear-gradient(rgba(5, 7, 13, 0.75), rgba(5, 7, 12, 1)),
     url(../assets/portada-movil-1-prueba.jpg);
 }
@@ -17,7 +17,7 @@ body {
 }
 .bienvenida__contenedor {
   fill: #fff;
-  height: 100%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,7 +74,7 @@ body {
   object-fit: cover;
 }
 .presentacion {
-  padding: 70px 30px;
+  padding: 30px 30px;
 }
 @media (min-width: 960px) {
   .presentacion {
@@ -105,7 +105,8 @@ body {
 }
 @media (min-width: 960px) {
   .servicios__text {
-    padding: 35px 131px 0 0;
+    padding: 20px 0 0 0;
+    width: 600px;
   }
 }
 .ul-custom {
@@ -119,18 +120,25 @@ body {
   border-radius: 5px;
   width: 290px;
 }
+@media (min-width: 960px) {
+  .ul-custom {
+    width: 326px;
+    font-size: 20px;
+  }
+}
 .descipcion__contenedor {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 70px;
+  margin: 20px 0;
 }
 @media (min-width: 960px) {
   .descipcion__contenedor {
-    flex-direction: inherit;
-    justify-content: space-between;
-    flex-grow: 10px;
+    flex-direction: initial;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    margin: 50px 0;
   }
 }
 .descripcion__contenedor_info {
@@ -141,7 +149,26 @@ body {
 @media (min-width: 960px) {
   .descripcion__contenedor_info {
     align-items: flex-start;
-    padding: 0 0 0 50px;
+  }
+}
+.servicios {
+  background-color: #9eb7e52b;
+  padding: 20px 0;
+}
+@media (min-width: 960px) {
+  .servicios {
+    padding: 50px 0;
+  }
+}
+.servicios__contenedor-info-y-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 960px) {
+  .servicios__contenedor-info-y-video {
+    flex-direction: initial;
+    justify-content: space-evenly;
   }
 }
 .btn-wsp {
@@ -171,7 +198,7 @@ body {
     line-height: 66px;
   }
   .img_whats {
-    width: 63px;
+    width: 61px;
     height: 63px;
   }
 }
@@ -185,6 +212,14 @@ body {
   align-items: center;
   background-color: #9eb7e52b;
 }
+@media (min-width: 960px) {
+  .contenedor-contacto {
+    flex-direction: initial;
+    justify-content: space-evenly;
+    padding: 30px 0 60px 0;
+  }
+}
+
 .contacto__ico {
   width: 32px;
   height: 32px;
@@ -199,6 +234,11 @@ body {
   padding: 0;
   margin-left: 15px;
 }
+@media (min-width: 960px) {
+  .info {
+    width: 400px;
+  }
+}
 .text__ubi {
   margin: 0;
   padding-top: 5px;
@@ -212,8 +252,8 @@ body {
 }
 @media (min-width: 960px) {
   .video-el {
-    width: 300px;
-    height: 500px;
+    width: 336px;
+    height: 583px;
     margin-right: 20px;
   }
 }
@@ -225,9 +265,16 @@ body {
   color: black;
 }
 .slider {
-  width: 95%;
+  width: 350px;
   margin: auto;
   overflow: hidden;
+}
+@media (min-width: 960px) {
+  .slider {
+    width: 616px;
+    height: 400px;
+    margin: inherit;
+  }
 }
 .slider ul {
   display: flex;
@@ -271,17 +318,32 @@ body {
     margin-left: -300%;
   }
 }
+.rubro {
+  background: linear-gradient(rgba(5, 7, 13, 0.75), rgba(5, 7, 12, 1)),
+    url("../assets/residuos-2.webp");
+  padding: 0 0 20px 0;
+  color: #fff;
+}
 .RAEEs {
-  color: black;
+  color: #fff;
   border: none;
   font-size: 30px;
   margin-right: auto;
   margin-left: 35px;
 }
+@media (min-width: 960px) {
+  .RAEEs {
+    margin-right: inherit;
+  }
+}
 .contenedor-rubro {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+@media (min-width: 960px) {
+  .contenedor-rubro {
+    align-items: center;
+  }
 }
 .btn,
 .btn__volver,
@@ -297,6 +359,12 @@ body {
 .btn_2 {
   margin-right: auto;
   margin-left: 35px;
+}
+@media (min-width: 960px) {
+  .btn_2 {
+    margin-right: inherit;
+    margin: 64px 0;
+  }
 }
 .btn__volver {
   width: 100px;
@@ -318,4 +386,29 @@ ul {
 }
 .cont__serv {
   display: flex;
+}
+.slider .services__img-desktop {
+  display: none;
+}
+@media (min-width: 960px) {
+  .slider .services__img-desktop {
+    display: flex;
+  }
+}
+@media (min-width: 960px) {
+  .slider .services__img-movil {
+    display: none;
+  }
+}
+.contenedor-contacto-text-y-ubi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 960px) {
+  .contenedor-contacto-text-y-ubi {
+    padding-left: 60px;
+    width: 500px;
+    padding-bottom: 100px;
+  }
 }
