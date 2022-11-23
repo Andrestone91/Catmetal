@@ -5,25 +5,26 @@
   align-items: center;
 }
 .contenedor__img-logo {
-  height: 12px;
-
+  height: 50px;
+  box-shadow: 0px 0px 20px mediumspringgreen;
   border-radius: 10px;
 }
 @media (min-width: 960px) {
   .contenedor__img-logo {
-    height: 14px;
+    height: 60px;
   }
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap");
 .header-contenedor {
   display: flex;
   justify-content: space-between;
-  padding: 24px 15px;
+  padding: 20px 15px;
   align-items: center;
 }
 @media (min-width: 960px) {
   .header-contenedor {
-    padding: 35px 65px 30px;
+    padding: 20px 65px 18px;
   }
 }
 .abre-ventana {
@@ -84,7 +85,7 @@
   z-index: 1;
 }
 .burger {
-  margin-top: 12px;
+  margin-top: -2px;
 }
 @media (min-width: 960px) {
   .burger {
@@ -99,7 +100,7 @@
 
   padding-right: 50px;
   text-decoration: none;
-  text-shadow: 0 0 8px black;
+  text-shadow: 0px 1px 1px black;
   color: mediumspringgreen;
 }
 @media (min-width: 960px) {

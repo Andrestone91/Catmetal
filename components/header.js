@@ -2,7 +2,7 @@ function addHeader(ele) {
   const headerEl = document.createElement("div");
   headerEl.innerHTML = `<div class="header-contenedor">
     <a href="./index.html">
-      <img src="./assets/Catmetal-logo-2.jpg" alt="" class="contenedor__img-logo " />
+      <img src="./assets/Catmetal-logo.jpg" alt="" class="contenedor__img-logo " />
     </a>
    <div class="nav-custom">
     <a href="#nosotros" class="text-nav">Nosotros</a>
