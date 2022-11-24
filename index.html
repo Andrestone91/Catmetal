@@ -310,5 +310,16 @@
       </a>
     </div>
     <footer class="contenedor-footer"></footer>
+    <script type="text/javascript">
+      window.addEventListener("scroll", () => {
+        var headerEl = document.querySelector(".header-contenedor");
+        var textNav = document.querySelector(".nav-custom").children;
+        headerEl.classList.toggle("abajo", window.scrollY > 0);
+        for (const t of textNav) {
+          t.classList.toggle("down", window.scrollY > 0);
+        }
+        textNav.classList.toggle("down", window.scrollY > 0);
+      });
+    </script>
   </body>
 </html>

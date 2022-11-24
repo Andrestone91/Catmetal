@@ -28,20 +28,24 @@ function addHeader(ele) {
 
   const ventanaEl = document.querySelector(".ventana");
   const cerrar = document.querySelector(".ventana__contenido").children
-
   const botonAbreVentana = document.querySelector(".abre-ventana");
-
   const botonCierraVentana = document.querySelector(".ventana__cierra-ventana");
+  const headerContenedor = document.querySelector(".header-contenedor")
+
 
   botonAbreVentana.addEventListener("click", () => {
     ventanaEl.style.display = "block";
+    ventanaEl.style.transitionDuration = "0.5s";
+    headerContenedor.style.height = "100%"
   });
   botonCierraVentana.addEventListener("click", () => {
     ventanaEl.style.display = "none";
+    headerContenedor.style.height = "inherit"
   });
   for (const c of cerrar) {
     c.addEventListener("click", () => {
       ventanaEl.style.display = "none";
+      headerContenedor.style.height = "inherit"
     })
   }
 }

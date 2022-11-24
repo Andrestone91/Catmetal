@@ -5,14 +5,14 @@ body {
   margin: 0;
 }
 .bienvenida {
-  height: 616px;
+  height: 668px;
   width: 100%;
-
+  padding-top: 102px;
   background: linear-gradient(rgba(5, 7, 13, 0.75), rgba(5, 7, 12, 1));
 }
 @media (min-width: 960px) {
   .bienvenida {
-    height: 400px;
+    height: 500px;
     background: linear-gradient(rgba(5, 7, 13, 0.75), rgba(5, 7, 12, 1));
   }
 }
