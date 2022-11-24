@@ -16,7 +16,7 @@
 }
 .texto {
   font-family: "Montserrat", sans-serif;
-  margin-right: auto;
+
   justify-content: left;
 }
 @media (min-width: 960px) {
@@ -43,6 +43,10 @@
   text-align: left;
 }
 .title {
-  margin-left: 30px;
   color: white;
+}
+@media (min-width: 960px) {
+  .title {
+    margin-left: 30px;
+  }
 }
