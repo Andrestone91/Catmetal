@@ -161,8 +161,7 @@ body {
   width: 295px;
   margin: auto;
 }
-.contenedor__valores {
-}
+
 .contenedor__widget {
   padding: 50px 10px 0;
   display: flex;
@@ -355,8 +354,8 @@ body {
 }
 @media (min-width: 960px) {
   .video-el {
-    width: 322px;
-    height: 500px;
+    width: 324px;
+    height: 383px;
     margin-right: 20px;
   }
 }
