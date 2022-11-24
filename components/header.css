@@ -6,7 +6,7 @@
 }
 .contenedor__img-logo {
   height: 50px;
-  box-shadow: 0px 0px 20px mediumspringgreen;
+  box-shadow: 0px 0px 20px black;
   border-radius: 10px;
 }
 @media (min-width: 960px) {
