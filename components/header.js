@@ -5,6 +5,7 @@ function addHeader(ele) {
       <img src="./assets/Catmetal-logo.jpg" alt="" class="contenedor__img-logo " />
     </a>
    <div class="nav-custom">
+    <a href="#bienvenida" class="text-nav">Inicio</a>
     <a href="#nosotros" class="text-nav">Nosotros</a>
     <a href="#servicios" class="text-nav">Servicios</a>
     <a href="#contacto" class="text-nav">Contacto</a>
@@ -15,6 +16,7 @@ function addHeader(ele) {
         <button class="ventana__cierra-ventana"></button>
       </div>
       <div class="ventana__contenido">
+        <a class="ventana__text" href="#bienvenida">Inicio</a>
         <a class="ventana__text" href="#nosotros">¿Quienes somos?</a>
         <a class="ventana__text" href="#servicios">Servicios</a>
         <a class="ventana__text" href="#contacto">Contacto</a>

@@ -4,6 +4,9 @@
 body {
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 .bienvenida {
   height: 668px;
   width: 100%;
@@ -185,6 +188,11 @@ body {
 @media (min-width: 960px) {
   .widget {
     height: 200px;
+  }
+  .widget:hover {
+    background-color: lightblue;
+    transition-duration: 0.5s;
+    border-radius: 10px;
   }
 }
 .valores__title-widget {
