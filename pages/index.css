@@ -414,6 +414,8 @@ html {
 }
 .video-el {
   margin-top: 20px;
+  width: 340px;
+  height: 500px;
 }
 @media (min-width: 960px) {
   .video-el {
