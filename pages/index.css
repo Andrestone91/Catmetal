@@ -11,12 +11,53 @@ html {
   height: 668px;
   width: 100%;
   padding-top: 102px;
-  background: linear-gradient(rgba(5, 7, 13, 0.75), rgba(5, 7, 12, 1));
+  background: linear-gradient(rgba(5, 7, 13, 0.75), rgba(5, 7, 12, 1)),
+    url("../assets/1.jpg");
+  background-position: center;
+  background-size: 100%;
 }
 @media (min-width: 960px) {
   .bienvenida {
     height: 500px;
-    background: linear-gradient(rgba(5, 7, 13, 0.75), rgba(5, 7, 12, 1));
+    background: linear-gradient(rgba(5, 7, 13, 0.75), rgba(5, 7, 12, 1)),
+      url("../assets/1.jpg");
+    background-position: left;
+    background-size: cover;
+  }
+}
+.titulo-principal {
+  font-family: "Comfortaa", cursive;
+
+  color: white;
+}
+.titulo-principal-animacion {
+  color: black;
+  position: relative;
+  font-family: "Comfortaa", cursive;
+  -webkit-text-stroke: 0.3vw black;
+}
+.titulo-principal-animacion::before {
+  content: attr(texto);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: mediumaquamarine;
+  -webkit-text-stroke: 0vw black;
+
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  60%,
+  90% {
+    width: 100%;
   }
 }
 .bienvenida__contenedor {
@@ -25,11 +66,11 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 }
 @media (min-width: 960px) {
   .bienvenida__contenedor {
     flex-direction: initial;
-    justify-content: space-evenly;
   }
 }
 .bienvenida__contenedor-text {
@@ -41,12 +82,13 @@ html {
 @media (min-width: 960px) {
   .bienvenida__contenedor-text {
     justify-content: initial;
+    flex-direction: initial;
   }
 }
 .logo-catmetal {
   width: 200px;
   margin-top: 30px;
-  box-shadow: 1px 0px 14px mediumspringgreen;
+  display: none;
   border-radius: 10px;
 }
 @media (min-width: 960px) {
@@ -125,8 +167,7 @@ html {
 }
 @media (min-width: 960px) {
   .text {
-    margin: 144px 90x 87px 0px;
-    width: 450px;
+    width: 400px;
     font-size: 37px;
   }
 }
@@ -197,10 +238,10 @@ html {
 }
 .valores__title-widget {
   color: cadetblue;
-  font-family: "Roboto", sans-serif;
+  font-family: "Comfortaa", sans-serif;
 }
 .valores__texto-widget {
-  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
 }
 .servicios__contenedor {
@@ -316,20 +357,28 @@ html {
 .btn-wsp:hover {
   background: #20ba5a;
 }
+.contacto {
+  padding: 100px 0 0 0;
+}
+.contacto-text {
+  width: 170px;
+}
 .contenedor-contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 0 0 0;
+  flex-direction: column-reverse;
 }
 @media (min-width: 960px) {
   .contenedor-contacto {
     flex-direction: initial;
     justify-content: space-evenly;
+    padding-top: 50px;
+    align-items: flex-start;
+    flex-direction: row-reverse;
   }
 }
-
 .contacto__ico {
   width: 32px;
   height: 32px;
@@ -340,6 +389,12 @@ html {
   margin-top: 30px;
   display: flex;
 }
+@media (min-width: 960px) {
+  .ubica {
+    margin-top: 0;
+  }
+}
+
 .info {
   padding: 0;
   margin-left: 15px;
@@ -369,6 +424,19 @@ html {
 }
 .maps__contenedor {
   margin: 50px 0 0 0;
+}
+@media (min-width: 960px) {
+  .maps__contenedor {
+    display: none;
+  }
+}
+.maps__contenedor-desktop {
+  display: none;
+}
+@media (min-width: 960px) {
+  .maps__contenedor-desktop {
+    display: inherit;
+  }
 }
 .links {
   text-decoration: none;
@@ -458,13 +526,23 @@ html {
 .btn,
 .btn__volver,
 .btn__inicio {
-  width: 200px;
-  height: 55px;
+  width: 100px;
+  height: 45px;
   padding: 0;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 28px;
   background-color: mediumseagreen;
   border: none;
+  position: relative;
+  bottom: 2px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+.btn__volver {
+  width: 200px;
+  height: 55px;
+  position: inherit;
+  font-size: 15px;
 }
 .btn_2 {
   margin-right: auto;
@@ -517,8 +595,11 @@ ul {
 }
 @media (min-width: 960px) {
   .contenedor-contacto-text-y-ubi {
-    padding-left: 60px;
-    width: 500px;
-    padding-bottom: 100px;
+    width: 350px;
+    overflow: hidden;
   }
+}
+.abajito {
+  filter: invert(100%) sepia(0%) saturate(7481%) hue-rotate(110deg)
+    brightness(103%) contrast(99%);
 }
