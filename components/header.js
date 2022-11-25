@@ -9,7 +9,7 @@ function addHeader(ele) {
     <a href="#nosotros" class="text-nav">Nosotros</a>
     <a href="#servicios" class="text-nav">Servicios</a>
     <a href="#contacto" class="text-nav">Contacto</a>
-    <a href="https://www.facebook.com/profile.php?id=100046977355703"><img class="contacto__ico"src="../assets/social_facebook_fb_35.png"></a>
+    <a href="https://www.facebook.com/profile.php?id=100046977355703"><img class="contacto__ico"src="./assets/social_facebook_fb_35.png"></a>
     </div>
     <button class="abre-ventana"></button>
     <div class="ventana">
