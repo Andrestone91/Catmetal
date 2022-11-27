@@ -158,12 +158,16 @@ html {
   font-size: 1.8rem;
   line-height: 1.1em;
   font-weight: 400;
-
+  width: 300px;
   margin: 0 0 30px;
   font-family: "Rubik", sans-serif;
 
-  -webkit-text-fill-color: lavender;
   -webkit-text-stroke: white 0.1px;
+}
+@media (min-width: 650px) {
+  .text {
+    width: auto;
+  }
 }
 @media (min-width: 960px) {
   .text {
@@ -219,16 +223,18 @@ html {
     margin: 40px 10px 0;
     flex-direction: initial;
     align-items: initial;
+    justify-content: space-evenly;
   }
 }
 .widget {
-  width: 80%;
-
+  width: 311px;
+  text-align: center;
   padding: 0 20px;
 }
 @media (min-width: 960px) {
   .widget {
     height: 200px;
+    text-align: inherit;
   }
   .widget:hover {
     background-color: lightblue;
@@ -278,7 +284,6 @@ html {
 @media (min-width: 960px) {
   .ul-custom {
     width: 326px;
-    font-size: 20px;
   }
 }
 .descipcion__contenedor {
@@ -534,7 +539,7 @@ html {
   border-radius: 5px;
   font-size: 28px;
   background-color: mediumseagreen;
-  border: none;
+
   position: relative;
   bottom: 2px;
   color: white;
