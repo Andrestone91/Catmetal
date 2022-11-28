@@ -58,7 +58,7 @@
       <div class="descipcion__contenedor">
         <div class="descripcion__contenedor_info">
           <h1 class="title_text">Sobre nosotros</h1>
-          <p class="servicios__text">
+          <p class="servicios__text" id="animacion__text-izq">
             Catmetal es un comprador líder de convertidores catalíticos usados y
             raEES. <br />
             <br />
@@ -86,7 +86,7 @@
     <section class="section-valores">
       <div class="contenedor__valores">
         <h1 class="title_text valores">Capacidades</h1>
-        <div class="contenedor__widget">
+        <div class="contenedor__widget" id="animacion__widget">
           <div class="widget">
             <h2 class="valores__title-widget">La Empresa</h2>
             <p class="valores__texto-widget">
@@ -115,7 +115,7 @@
       <div class="servicios__contenedor-info-y-video">
         <div class="descripcion__contenedor_info">
           <h1 class="title_text">Servicios</h1>
-          <p class="servicios__text">
+          <p class="servicios__text" id="animacion__text">
             Desea vender sus catalizadores y/o raEES rápida y fácilmente?
             Entonces, lo que usted necesita es exactamente nuestro servicio de
             compra. Nuestro equipo de expertos clasificará el valor de su
@@ -325,17 +325,5 @@
       </a>
     </div>
     <footer class="contenedor-footer"></footer>
-    <script type="text/javascript">
-      window.addEventListener("scroll", () => {
-        var headerEl = document.querySelector(".header-contenedor");
-        var icoEl = document.querySelector(".contacto__ico");
-        icoEl.classList.toggle("abajito", window.scrollY > 0);
-        var textNav = document.querySelector(".nav-custom").children;
-        headerEl.classList.toggle("abajo", window.scrollY > 0);
-        for (const t of textNav) {
-          t.classList.toggle("down", window.scrollY > 0);
-        }
-      });
-    </script>
   </body>
 </html>

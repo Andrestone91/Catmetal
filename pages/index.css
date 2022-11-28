@@ -270,6 +270,11 @@ html {
     width: 600px;
   }
 }
+@keyframes mover {
+  0% {
+    transform: translate(100%);
+  }
+}
 .ul-custom {
   text-align: left;
   font-family: "Rubik", sans-serif;
