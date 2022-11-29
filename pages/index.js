@@ -18,20 +18,25 @@ function botonEvento() {
 function main() {
     componentsReusables()
     botonEvento()
-    const bienvenidaEl = document.querySelector(".bienvenida")
-    const bienvenidaCEl = document.querySelector(".bienvenida__contenedor")
+
 
     window.addEventListener("scroll", () => {
         var widgetEl = document.getElementById("animacion__widget");
         var posicionWidget = widgetEl.getBoundingClientRect().top;
-        console.log(posicionWidget);
-        var tamañoPantalla = window.innerHeight * 0.9;
-        console.log(tamañoPantalla);
-
+        var servicesText = document.getElementById("animacion__servicios-text")
+        var posicionServText = servicesText.getBoundingClientRect().top;
+        var cajaSerEl = document.getElementById("animacion__caja-serv")
+        var posicionCajaSer = cajaSerEl.getBoundingClientRect().top;
+        var tamañoPantalla = window.innerHeight;
         if (posicionWidget < tamañoPantalla) {
-            widgetEl.style.animation = "mover 1s ease-out";
+            widgetEl.style.animation = "mover 1.2s ease-in-out";
         }
-
+        if (posicionServText < tamañoPantalla) {
+            servicesText.style.animation = "moverLat 1.8s ease-out"
+        }
+        if (posicionCajaSer < tamañoPantalla) {
+            cajaSerEl.style.animation = "moverLat 1.8s ease-out"
+        }
         var headerEl = document.querySelector(".header-contenedor");
         var icoEl = document.querySelector(".contacto__ico");
         icoEl.classList.toggle("abajito", window.scrollY > 0);
