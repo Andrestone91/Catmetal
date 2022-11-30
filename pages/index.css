@@ -11,17 +11,17 @@ html {
   height: 668px;
   width: 100%;
   padding-top: 102px;
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(5, 4, 8, 1)),
-    url("../assets/1.jpg");
+  background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(5, 4, 8, 0.85)),
+    url("../assets/catmetal-portada-11.jpg");
   background-position: bottom;
   background-size: cover;
 }
 @media (min-width: 960px) {
   .bienvenida {
     height: 500px;
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(5, 4, 8, 1)),
-      url("../assets/1.jpg");
-    background-position: left;
+    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(5, 4, 8, 1)),
+      url("../assets/catmetal-portada-11.jpg");
+    background-position: center;
     background-size: cover;
   }
 }
@@ -480,8 +480,16 @@ html {
 .maps__contenedor-desktop {
   display: none;
 }
-@media (min-width: 960px) {
+@media only screen and (min-width: 960px) and (max-width: 1499px) {
   .maps__contenedor-desktop {
+    display: inherit;
+  }
+}
+.maps__contenedor-desktop-1500 {
+  display: none;
+}
+@media (min-width: 1500px) {
+  .maps__contenedor-desktop-1500 {
     display: inherit;
   }
 }
@@ -545,9 +553,10 @@ html {
 }
 .rubro {
   background: linear-gradient(rgba(5, 7, 13, 0.75), rgba(5, 7, 12, 1)),
-    url("../assets/residuos-2.webp");
+    url("../assets/1.jpg");
   padding: 100px 0 28px 0;
   color: #fff;
+  background-size: cover;
 }
 .RAEEs {
   color: #fff;
