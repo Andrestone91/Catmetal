@@ -13,7 +13,7 @@ html {
   padding-top: 102px;
   background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(5, 4, 8, 0.85)),
     url("../assets/catmetal-portada-11.jpg");
-  background-position: bottom;
+  background-position: left;
   background-size: cover;
 }
 @media (min-width: 960px) {
@@ -21,19 +21,19 @@ html {
     height: 500px;
     background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(5, 4, 8, 1)),
       url("../assets/catmetal-portada-11.jpg");
-    background-position: center;
+    background-position: left;
     background-size: cover;
   }
 }
 .titulo-principal {
-  font-family: "Comfortaa", cursive;
-
+  font-family: "Noto Sans Lao Looped", sans-serif;
+  font-weight: 500;
   color: white;
 }
 .titulo-principal-animacion {
   color: black;
   position: relative;
-  font-family: "Comfortaa", cursive;
+  font-family: "Noto Sans Lao Looped", sans-serif;
   -webkit-text-stroke: 0.3vw black;
 }
 .titulo-principal-animacion::before {
@@ -103,7 +103,7 @@ html {
   line-height: 40px;
   overflow: hidden;
   display: flex;
-  font-family: "Rubik", sans-serif;
+  font-family: "Noto Sans Lao Looped", sans-serif;
   margin-bottom: 10px;
 }
 .contenedor-ul-bienvenidos__custom {
@@ -160,7 +160,7 @@ html {
   font-weight: 400;
   width: 300px;
   margin: 0 0 30px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Noto Sans Lao Looped", sans-serif;
 
   -webkit-text-stroke: white 0.1px;
 }
@@ -512,8 +512,8 @@ html {
 .slider ul {
   display: flex;
   padding: 0;
-  width: 400%;
-  animation: cambio 20s infinite alternate;
+  width: 800%;
+  animation: cambio 25s infinite alternate;
 }
 .slider li {
   width: 100%;
@@ -526,29 +526,57 @@ html {
   0% {
     margin-left: 0;
   }
-  20% {
+  11% {
     margin-left: 0;
   }
 
-  25% {
+  13% {
     margin-left: -100%;
   }
-  45% {
+  24% {
     margin-left: -100%;
   }
 
-  50% {
+  26% {
     margin-left: -200%;
   }
-  70% {
+  37% {
     margin-left: -200%;
   }
 
-  75% {
+  39% {
     margin-left: -300%;
+  }
+  50% {
+    margin-left: -300%;
+  }
+
+  52% {
+    margin-left: -400%;
+  }
+  63% {
+    margin-left: -400%;
+  }
+
+  65% {
+    margin-left: -500%;
+  }
+  76% {
+    margin-left: -500%;
+  }
+
+  78% {
+    margin-left: -600%;
+  }
+  89% {
+    margin-left: -600%;
+  }
+
+  91% {
+    margin-left: -700%;
   }
   100% {
-    margin-left: -300%;
+    margin-left: -700%;
   }
 }
 .rubro {
