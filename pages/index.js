@@ -27,9 +27,9 @@ function main() {
         var posicionServText = servicesText.getBoundingClientRect().top;
         var cajaSerEl = document.getElementById("animacion__caja-serv")
         var posicionCajaSer = cajaSerEl.getBoundingClientRect().top;
-        console.log(posicionCajaSer);
+
         var tamañoPantalla = window.innerHeight;
-        console.log(tamañoPantalla);
+
         if (posicionWidget < tamañoPantalla) {
             widgetEl.style.animation = "mover 1.5s ease-in-out";
         }
