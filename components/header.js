@@ -6,8 +6,8 @@ function addHeader(ele) {
     </a>
    <div class="nav-custom">
     <a href="#bienvenida" class="text-nav">Inicio</a>
-    <a href="#nosotros" class="text-nav">Nosotros</a>
     <a href="#servicios" class="text-nav">Servicios</a>
+    <a href="#nosotros" class="text-nav">Nosotros</a>
     <a href="#contacto" class="text-nav">Contacto</a>
     <a 
     href="https://www.facebook.com/profile.php?id=100046977355703" target="_blank"><img class="contacto__ico"src="./assets/social_facebook_fb_35.png"></a>
@@ -21,8 +21,8 @@ function addHeader(ele) {
       
       <div class="ventana__contenido">
         <a class="ventana__text" href="#bienvenida">Inicio</a>
-        <a class="ventana__text" href="#nosotros">Quienes somos?</a>
         <a class="ventana__text" href="#servicios">Servicios</a>
+        <a class="ventana__text" href="#nosotros">Quienes somos?</a>
         <a class="ventana__text" href="#contacto">Contacto</a>
         <img class="ventana__cruz" src="./assets/cruz.svg" alt="" />
       </div>

@@ -12,29 +12,43 @@ html {
   width: 100%;
   padding-top: 102px;
   background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(5, 4, 8, 0.85)),
-    url("../assets/catmetal-portada-11.jpg");
-  background-position: left;
+    url("../assets/portada-test.jpeg");
+  background-position: right;
   background-size: cover;
 }
 @media (min-width: 960px) {
   .bienvenida {
     height: 500px;
     background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(5, 4, 8, 1)),
-      url("../assets/catmetal-portada-11.jpg");
-    background-position: left;
+      url("../assets/portada-test.jpeg");
+    background-position: top;
     background-size: cover;
   }
 }
 .titulo-principal {
-  font-family: "Noto Sans Lao Looped", sans-serif;
+  font-family: "Radio Canada", sans-serif;
   font-weight: 500;
   color: white;
+  padding-left: 6px;
+  font-size: 1.8rem;
+}
+@media (min-width: 960px) {
+  .titulo-principal {
+    font-size: 37px;
+  }
 }
 .titulo-principal-animacion {
   color: black;
   position: relative;
-  font-family: "Noto Sans Lao Looped", sans-serif;
+  font-family: "Radio Canada", sans-serif;
   -webkit-text-stroke: 0.3vw black;
+  font-size: 1.8rem;
+  margin: 0;
+}
+@media (min-width: 960px) {
+  .titulo-principal-animacion {
+    font-size: 37px;
+  }
 }
 .titulo-principal-animacion::before {
   content: attr(texto);
@@ -60,6 +74,28 @@ html {
     width: 100%;
   }
 }
+.text {
+  color: white;
+  font-size: 1.8rem;
+  line-height: 1.1em;
+  font-weight: 400;
+  width: 300px;
+  margin: 0 0 30px;
+  font-family: "Radio Canada", sans-serif;
+
+  -webkit-text-stroke: white 0.1px;
+}
+@media (min-width: 650px) {
+  .text {
+    width: auto;
+  }
+}
+@media (min-width: 960px) {
+  .text {
+    width: 390px;
+    font-size: 37px;
+  }
+}
 .bienvenida__contenedor {
   fill: #fff;
   height: 100%;
@@ -82,7 +118,7 @@ html {
 @media (min-width: 960px) {
   .bienvenida__contenedor-text {
     justify-content: initial;
-    flex-direction: initial;
+    padding-bottom: 70px;
   }
 }
 .logo-catmetal {
@@ -103,7 +139,7 @@ html {
   line-height: 40px;
   overflow: hidden;
   display: flex;
-  font-family: "Noto Sans Lao Looped", sans-serif;
+  font-family: "Radio Canada", sans-serif;
   margin-bottom: 10px;
 }
 .contenedor-ul-bienvenidos__custom {
@@ -153,28 +189,6 @@ html {
     font-size: 30px;
   }
 }
-.text {
-  color: white;
-  font-size: 1.8rem;
-  line-height: 1.1em;
-  font-weight: 400;
-  width: 300px;
-  margin: 0 0 30px;
-  font-family: "Noto Sans Lao Looped", sans-serif;
-
-  -webkit-text-stroke: white 0.1px;
-}
-@media (min-width: 650px) {
-  .text {
-    width: auto;
-  }
-}
-@media (min-width: 960px) {
-  .text {
-    width: 400px;
-    font-size: 37px;
-  }
-}
 .img__logo {
   width: 200px;
   height: 200px;
@@ -211,7 +225,7 @@ html {
 }
 
 .contenedor__widget {
-  padding: 50px 10px 0;
+  padding: 50px 10px 20px 10px;
   display: flex;
   flex-direction: column;
   width: 98%;
@@ -272,12 +286,20 @@ html {
 }
 @keyframes mover {
   0% {
-    transform: translateY(100%);
+    transform: translateX(-100%);
   }
 }
 @keyframes moverLat {
   0% {
-    transform: translateX(-100%);
+    transform: translateY(100%);
+  }
+}
+@media (min-width: 960px) {
+  #animacion__servicios-text {
+    animation: 1.5s ease-in-out 0s 1 normal none running moverLat;
+  }
+  #animacion__caja-serv {
+    animation: 1.5s ease-in-out 0s 1 normal none running moverLat;
   }
 }
 .ul-custom {
@@ -375,8 +397,6 @@ html {
   line-height: 63px;
   bottom: 25px;
   right: 25px;
-  background: #25d366;
-  color: #fff;
   border-radius: 50px;
   text-align: center;
   font-size: 35px;
@@ -385,18 +405,22 @@ html {
   transition: all 300ms ease;
 }
 .img_whats {
-  width: 60px;
+  width: 63px;
   height: 62px;
+  position: relative;
+  right: 2px;
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .btn-wsp {
     width: 61px;
     height: 61px;
     line-height: 66px;
+    box-shadow: none;
   }
   .img_whats {
-    width: 61px;
+    width: 62px;
     height: 63px;
+    right: 1px;
   }
 }
 .btn-wsp:hover {
@@ -457,16 +481,29 @@ html {
   margin: 0;
   padding-bottom: 5px;
 }
-.video-el {
-  margin-top: 20px;
+.caja-video {
   width: 340px;
   height: 500px;
+  background-color: mediumaquamarine;
+  border-radius: 10px;
+  padding: 10px;
+}
+@media (min-width: 960px) {
+  .caja-video {
+    width: 310px;
+    height: 400px;
+    margin-top: 20px;
+  }
+}
+
+.video-el {
+  width: 100%;
+  height: 100%;
 }
 @media (min-width: 960px) {
   .video-el {
-    width: 324px;
-    height: 383px;
-    margin-right: 20px;
+    width: 100%;
+    height: 100%;
   }
 }
 .maps__contenedor {
@@ -507,6 +544,7 @@ html {
     width: 616px;
     height: 400px;
     margin: inherit;
+    border: solid;
   }
 }
 .slider ul {
@@ -616,11 +654,11 @@ html {
   border-radius: 5px;
   font-size: 28px;
   background-color: mediumseagreen;
-
   position: relative;
   bottom: 2px;
   color: white;
   text-shadow: 1px 1px 1px black;
+  font-family: "Radio Canada", sans-serif;
 }
 .btn__volver {
   width: 200px;
@@ -665,6 +703,7 @@ ul {
 @media (min-width: 960px) {
   .slider .services__img-desktop {
     display: flex;
+    margin: 0;
   }
 }
 @media (min-width: 960px) {
@@ -681,9 +720,38 @@ ul {
   .contenedor-contacto-text-y-ubi {
     width: 350px;
     overflow: hidden;
+    border-left: solid 1px;
+  }
+}
+@media (min-width: 1920px) {
+  .contenedor-contacto-text-y-ubi {
+    margin-right: 100px;
   }
 }
 .abajito {
   filter: invert(100%) sepia(0%) saturate(7481%) hue-rotate(110deg)
     brightness(103%) contrast(99%);
+}
+.linea-de-cajas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.centrar-mp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boton-mercadoPago {
+  padding: 0 1.7142857142857142em;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.875em;
+  line-height: 2.7142857142857144;
+  background: #009ee3;
+  border-radius: 0.2857142857142857em;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
 }

@@ -27,15 +27,17 @@ function main() {
         var posicionServText = servicesText.getBoundingClientRect().top;
         var cajaSerEl = document.getElementById("animacion__caja-serv")
         var posicionCajaSer = cajaSerEl.getBoundingClientRect().top;
+        console.log(posicionCajaSer);
         var tamañoPantalla = window.innerHeight;
+        console.log(tamañoPantalla);
         if (posicionWidget < tamañoPantalla) {
-            widgetEl.style.animation = "mover 1.2s ease-in-out";
+            widgetEl.style.animation = "mover 1.5s ease-in-out";
         }
         if (posicionServText < tamañoPantalla) {
-            servicesText.style.animation = "moverLat 1.8s ease-out"
+            servicesText.style.animation = "moverLat 1.5s ease-out"
         }
         if (posicionCajaSer < tamañoPantalla) {
-            cajaSerEl.style.animation = "moverLat 1.8s ease-out"
+            cajaSerEl.style.animation = "moverLat 1.5s ease-out"
         }
         var headerEl = document.querySelector(".header-contenedor");
         var icoEl = document.querySelector(".contacto__ico");
