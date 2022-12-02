@@ -34,7 +34,7 @@ html {
 }
 @media (min-width: 960px) {
   .titulo-principal {
-    font-size: 37px;
+    font-size: 30px;
   }
 }
 .titulo-principal-animacion {
@@ -47,7 +47,7 @@ html {
 }
 @media (min-width: 960px) {
   .titulo-principal-animacion {
-    font-size: 37px;
+    font-size: 50px;
   }
 }
 .titulo-principal-animacion::before {
@@ -94,6 +94,7 @@ html {
   .text {
     width: 390px;
     font-size: 37px;
+    line-height: 0.98em;
   }
 }
 .bienvenida__contenedor {
@@ -258,7 +259,7 @@ html {
 }
 .valores__title-widget {
   color: cadetblue;
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .valores__texto-widget {
   font-family: "Rubik", sans-serif;
@@ -339,6 +340,7 @@ html {
   margin: 0;
   font-size: 18px;
   height: 75px;
+  width: 150px;
 }
 .caja__servicios-telefonica,
 .caja__servicios-catalogo,
@@ -738,6 +740,7 @@ ul {
   align-items: center;
   justify-content: center;
   padding: 20px 0;
+  display: none;
 }
 .centrar-mp {
   display: flex;
