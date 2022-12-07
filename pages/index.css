@@ -543,7 +543,7 @@ html {
 .slider ul {
   display: flex;
   padding: 0;
-  width: 800%;
+  width: 700%;
   animation: cambio 25s infinite alternate;
 }
 .slider li {
@@ -557,57 +557,50 @@ html {
   0% {
     margin-left: 0;
   }
-  11% {
+  12.5% {
     margin-left: 0;
   }
 
-  13% {
+  14.5% {
     margin-left: -100%;
   }
-  24% {
+  27% {
     margin-left: -100%;
   }
 
-  26% {
+  29% {
     margin-left: -200%;
   }
-  37% {
+  41.5% {
     margin-left: -200%;
   }
 
-  39% {
+  43.5% {
     margin-left: -300%;
   }
-  50% {
+  56% {
     margin-left: -300%;
   }
 
-  52% {
+  58% {
     margin-left: -400%;
   }
-  63% {
+  70.5% {
     margin-left: -400%;
   }
 
-  65% {
+  72.5% {
     margin-left: -500%;
   }
-  76% {
+  85% {
     margin-left: -500%;
   }
 
-  78% {
+  87% {
     margin-left: -600%;
-  }
-  89% {
-    margin-left: -600%;
-  }
-
-  91% {
-    margin-left: -700%;
   }
   100% {
-    margin-left: -700%;
+    margin-left: -600%;
   }
 }
 .rubro {
