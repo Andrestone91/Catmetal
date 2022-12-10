@@ -327,7 +327,7 @@ html {
   .caja__servicios {
     grid-template-columns: 180px 180px 180px 180px;
     grid-template-rows: auto;
-    padding-right: 120px;
+    padding-right: 80px;
   }
 }
 .caja__servicios-text {
